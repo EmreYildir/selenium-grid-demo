@@ -13,10 +13,12 @@ public class EtsyPage {
     }
 
 
-    @FindBy(css = "[id*='search-query']")
+    @FindBy(id = "global-enhancements-search-query")
     public WebElement searchBox;
 
-    @FindBy(xpath="//button[normalize-space()='Accept']")
+    @FindBy(xpath = "//button[@value='Search']")
     public WebElement accept;
+
+
 
 }
